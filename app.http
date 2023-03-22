@@ -1,0 +1,47 @@
+GET http://localhost:3000/ 
+###
+
+// Get All Movies API
+GET http://localhost:3000/movies/ 
+### 
+
+// Add Movie API
+POST  http://localhost:3000/movies/   
+Content-Type: application/json 
+
+{
+  "directorId": 6,
+  "movieName": "Balagam",
+  "leadActor": "Kethiri Sudhakar Reddy"
+} 
+### 
+
+// Get Movie API
+GET http://localhost:3000/movies/46/ 
+### 
+
+// Update Movie API
+PUT http://localhost:3000/movies/119/
+Content-Type: application/json
+
+{
+  "directorId": 24,
+  "movieName": "Thor",
+  "leadActor": "Christopher Hemsworth" 
+}
+### 
+
+// Delete Movie API
+DELETE http://localhost:3000/movies/120/ 
+### 
+
+
+// Get All Directors API
+GET http://localhost:3000/directors/ 
+### 
+
+// Get All Movies by Director API
+GET http://localhost:3000/directors/6/movies/
+
+
+
